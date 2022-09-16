@@ -117,6 +117,12 @@ border-radius: 8px;
     border: 1px solid #443E54;
 }
 
+.social-list {
+    display: flex;
+    gap: 5px;
+
+}
+
 /*ANIMATION*/
 
 header div {

@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+        <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <title>NLW eSports</title>
 </head>
 <body>
@@ -22,9 +25,12 @@
             <div>
                 <h2>Meus Jogos</h2>
                 <p>Os games que gosto de jogar!</p>
+
+            <div class="swiper mySwiper">
             
-            <ul class="games-list">
-                <li>
+            <ul class="games-list swiper-wrapper">
+                
+                <li class="swiper-slide">
                     <a target="_blank" href="https://www.twitch.tv/directory/game/PUBG">
                     <img src="https://static-cdn.jtvnw.net/ttv-boxart/505884-285x380.jpg" alt=""></a>
                 </li>
@@ -32,24 +38,26 @@
                     <a target="_blank" href="https://www.twitch.tv/directory/game/Destiny%202">
                     <img src="https://static-cdn.jtvnw.net/ttv-boxart/497057-285x380.jpg" alt=""></a>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <a target="_blank" href="https://www.twitch.tv/directory/game/Lost%20Ark">
                     <img src="https://static-cdn.jtvnw.net/ttv-boxart/490100-285x380.jpg" alt=""></a>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <a target="_blank" href="https://www.twitch.tv/directory/game/Battlefield%202042">
                     <img src="https://static-cdn.jtvnw.net/ttv-boxart/514974_IGDB-285x380.jpg" alt=""></a>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <a target="_blank" href="https://www.twitch.tv/directory/game/Battlefield%204">
                     <img src="https://static-cdn.jtvnw.net/ttv-boxart/66402_IGDB-285x380.jpg" alt=""></a>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <a target="_blank" href="https://www.twitch.tv/directory/game/Age%20of%20Empires%20IV">
                     <img src="https://static-cdn.jtvnw.net/ttv-boxart/498482_IGDB-285x380.jpg" alt=""></a>
                 </li>
             </ul>
-        </div>
+            </div>
+
+            </div>
         </section>
 
         <section>
@@ -103,5 +111,14 @@
         </div>
         </section>
     </main>
-</body>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 5,
+              loop: true,
+            });
+          </script>
+    </body>
 </html>
